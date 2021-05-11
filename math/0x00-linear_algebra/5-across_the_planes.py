@@ -7,7 +7,7 @@ def add_matrices2D(mat1, mat2):
     element = [[1, 1], [1, 1]]
     if len(mat1) != len(mat2):
         return(None)
-    elif len(mat1[0]) != len(mat2[0]):
+    if len(mat1[0]) != len(mat2[0]):
         return(None)
     else:
         for i in range(0, len(mat1)):
