@@ -9,5 +9,7 @@ import numpy as np
 
 def np_cat(mat1, mat2, axis=0):
     """return numpy array"""
-    concat = np.concatenate((mat1, mat2), axis=axis)
+    mat_1 = np.array(mat1)
+    mat_2 = np.array(mat2)
+    concat = np.concatenate((mat_1, mat_2), axis=axis)
     return(concat)
