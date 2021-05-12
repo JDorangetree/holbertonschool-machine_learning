@@ -4,6 +4,8 @@
 
 def poly_derivative(poly):
     """return a list"""
+    if len(poly) == 0:
+        return(None)
     new_poly = poly[1:]
     if len(new_poly) == 0:
         return([0])
