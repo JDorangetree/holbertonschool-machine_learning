@@ -7,11 +7,17 @@ def poly_derivative(poly):
     new_poly = poly[1:]
     if len(new_poly) == 0:
         return([0])
-    
-    result = []
-    mul = 1
-    for i in new_poly:
-        valor = i * mul
-        mul += 1
-        result.append(valor)
-    return(result)
+    poly = []
+    for j in new_poly:
+        if j != 0:
+            poly.append(j)
+    if len(poly) == 0:
+        return([0])
+    else:
+        result = []
+        mul = 1
+        for i in new_poly:
+            valor = i * mul
+            mul += 1
+            result.append(valor)
+        return(result)
