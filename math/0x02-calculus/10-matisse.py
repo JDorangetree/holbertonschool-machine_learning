@@ -9,7 +9,7 @@ def poly_derivative(poly):
         return([0])
     poly = []
     for j in new_poly:
-        if j != 0:
+        if j != 0 and type(j) == int:
             poly.append(j)
     if len(poly) == 0:
         return([0])
@@ -21,3 +21,5 @@ def poly_derivative(poly):
             mul += 1
             result.append(valor)
         return(result)
+x = poly_derivative([5, 3, 0, 'h'])
+print(x)
