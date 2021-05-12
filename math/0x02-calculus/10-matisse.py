@@ -6,7 +6,7 @@ def poly_derivative(poly):
     """return a list"""
     if len(poly) == 0:
         return(None)
-    if type(poly) is not list:
+    if type(poly) is not list or len(poly) == 0:
         return(None)
     new_poly = poly[1:]
     if len(new_poly) == 0:
