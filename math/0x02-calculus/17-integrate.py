@@ -1,3 +1,7 @@
+#!/usr/bin/env python3
+"""function that integrates a poly f(x)"""
+
+
 def poly_integral(poly, C=0):
     """function to integrate a poly"""
 
