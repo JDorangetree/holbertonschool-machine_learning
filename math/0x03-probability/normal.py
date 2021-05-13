@@ -25,3 +25,13 @@ class Normal():
                     value = value * (-1)
                 sumarize = sumarize + pow(value, 2)
             self.stddev = pow((sumarize / len(data)), 0.5)
+
+    def z_score(self, x):
+        """Calculates the z-score of a given x-value"""
+        z = (x - self.mean) / self.stddev
+        return(z)
+
+    def x_value(self, z):
+        """Calculates the z-score of a given x-value"""
+        x = (z * self.stddev) + self.mean
+        return(x)
