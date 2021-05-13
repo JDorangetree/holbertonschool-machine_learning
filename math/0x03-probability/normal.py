@@ -53,7 +53,7 @@ class Normal():
         """Calculates the value of the CDF for a given x-value"""
         x = (x - self.mean) / (self.stddev * pow(2, 0.5))
         factor_error = (x - (pow(x, 3) / 3) + (pow(x, 5) / 10) -
-         (pow(x, 7) / 42) + (pow(x, 9) / 216))
+                            (pow(x, 7) / 42) + (pow(x, 9) / 216))
         erf = factor_error * (2 / (pow(pi, 0.5)))
         cdf = 0.5 * (1 + erf)
         return(cdf)
