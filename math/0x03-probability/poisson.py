@@ -6,12 +6,11 @@ class Poisson():
     """The class to call method of poisson distribution"""
     def __init__(self, data=None, lambtha=1.):
         """Initialize method"""
-       
-        if data == None:
+        if data is None:
             if lambtha >= 0:
                 self.lambtha = float(lambtha)
             else:
-               raise ValueError("lambtha must be a positive value")
+                raise ValueError("lambtha must be a positive value")
         else:
             if type(data) != list:
                 raise TypeError('data must be a list')
