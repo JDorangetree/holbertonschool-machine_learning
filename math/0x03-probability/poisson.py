@@ -4,8 +4,6 @@
 
 class Poisson():
     """The class to call method of poisson distribution"""
-    
-    e = 2.7182818285
     def __init__(self, data=None, lambtha=1.):
         """Initialize method"""
        
