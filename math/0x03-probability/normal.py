@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """class Poisson that represents a poisson distribution"""
 
+pi = 3.1415926536
+e = 2.7182818285
+
 
 class Normal():
     """The class to call method of poisson distribution"""
@@ -35,3 +38,13 @@ class Normal():
         """Calculates the z-score of a given x-value"""
         x = (z * self.stddev) + self.mean
         return(x)
+
+    def pdf(self, x):
+        """Calculates the value of the PDF for a given x-value"""
+        var = pow(self.stddev, 2)
+        exp = pow((x - self.mean), 2) / (2*var)
+        factor2 = pow(e, -exp)
+        root = pow(2*pi, 0.5)
+        factor1 = (1 / self.stddev) * (1 / root)
+        pdf = factor1 * factor2
+        return(pdf)
