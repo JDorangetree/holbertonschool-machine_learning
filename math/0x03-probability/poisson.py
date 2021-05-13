@@ -28,6 +28,6 @@ class Poisson():
         factorial = 1
         for i in range(1, k + 1):
             factorial = factorial * i
-        
+
         pmf = pow(e, -(self.lambtha)) * pow(self.lambtha, k) / factorial
         return(pmf)
