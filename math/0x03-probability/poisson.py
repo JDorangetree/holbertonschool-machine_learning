@@ -31,3 +31,15 @@ class Poisson():
 
         pmf = pow(e, -(self.lambtha)) * pow(self.lambtha, k) / factorial
         return(pmf)
+
+    def cdf(self, k):
+        """Calculates the value of the CDF"""
+        if type(k) != int:
+            k = int(k)
+        if k < 0:
+            return(0)
+        factorial = 1
+        prob = []
+        for i in range(0, k + 1):
+            prob.append(self.pmf(i))
+        return(sum(prob))
