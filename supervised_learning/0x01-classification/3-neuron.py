@@ -51,5 +51,5 @@ class Neuron():
         """Calculates the cost of the model using logistic regression"""
         lost_function = -np.multiply(Y, np.log10(A)) + (
             np.multiply((1 - Y), np.log10(1.0000001 - A)))
-        cost_function = (1 / self.W.shape[1]) * lost_function
+        cost_function = (1 / self.W.shape[1]) * np.sum(lost_function)
         return cost_function
