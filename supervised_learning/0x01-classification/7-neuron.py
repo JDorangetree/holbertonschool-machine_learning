@@ -86,7 +86,8 @@ class Neuron():
             self.gradient_descent(X, Y, self.__A, alpha)
         return self.evaluate(X, Y)
 
-    def train(self, X, Y, iterations=5000, alpha=0.05, verbose=True, graph=True, step=100):
+    def train(self, X, Y, iterations=5000, alpha=0.05,
+              verbose=True, graph=True, step=100):
         """Trains the neuron by updating the private attributes
          __W, __b, and __A"""
         if type(iterations) is not int:
