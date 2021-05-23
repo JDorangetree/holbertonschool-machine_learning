@@ -107,5 +107,5 @@ class NeuralNetwork():
         """Evaluates the neural network’s predictions"""
         eval = self.forward_prop(X)
         eval = np.where(eval >= 0.5, 1, 0)
-        cost = self.cost(Y, self.__A)
+        cost = self.cost(Y, self.__A2)
         return(eval, cost)
