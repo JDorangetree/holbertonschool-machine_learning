@@ -19,7 +19,7 @@ class NeuralNetwork():
         elif nodes < 1:
             raise ValueError('nodes must be a positive integer')
 
-        self.W1 = np.random.randn(nx).reshape((1, nx))
+        self.W1 = np.random.randn(nx, nodes).reshape((nodes, nx))
         self.b1 = 0
         self.A1 = 0
         self.W2 = np.random.randn(nodes).reshape((1, nodes))
