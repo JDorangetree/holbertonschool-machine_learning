@@ -87,5 +87,5 @@ class DeepNeuralNetwork():
         """Evaluates the neural network’s predictions"""
         eval1, eval2 = self.forward_prop(X)
         eval1 = np.where(eval1 >= 0.5, 1, 0)
-        cost = self.cost(Y, self.__A2)
+        cost = self.cost(Y, self.__cache['A' + str(self.__L)])
         return(eval1, cost)
