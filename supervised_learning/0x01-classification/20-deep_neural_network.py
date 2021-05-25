@@ -88,5 +88,5 @@ class DeepNeuralNetwork():
         eval1, eval2 = self.forward_prop(X)
         eval2 = np.where(eval2 >= 0.5, 1, 0)
         cost = self.cost(Y, self.__A2)
-        return(eval2, cost)
+        return(eval1, cost)
 
