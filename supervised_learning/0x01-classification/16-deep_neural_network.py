@@ -20,8 +20,9 @@ class DeepNeuralNetwork():
         for i in range(0, len(layers)):
             if layers[i] <= 0:
                 raise TypeError('nx must be an integer')
-            weights.update({'W' + str(i+1) : np.random.randn(nx, layers[i]).reshape(layers[i], nx)})
-
+            weights.update({'W' + str(i+1): np.random.randn(nx,
+                            layers[i]).reshape(layers[i], nx)})
+            weights.update({'b' + str(i+1):  np.zeros((layers[i], 1))})
         self.L = len(layers)
         self.cache = {}
         self.weights = weights
