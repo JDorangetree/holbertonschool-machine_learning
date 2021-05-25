@@ -7,7 +7,7 @@ import numpy as np
 def specificity(confusion):
     """Returns: a numpy.ndarray of shape (classes,) precision of each class"""
     diagonal = confusion.diagonal()
-    FP = np.sum(confusion, axis=1) - diagonal
+    FP = np.sum(confusion, axis=0) - diagonal
     FN = np.sum(confusion, axis=1) - diagonal
     TN = np.sum(confusion) - (diagonal + FN + FP)
     especificity = TN / (TN + FP)
