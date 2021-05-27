@@ -2,7 +2,6 @@
 """Script to use L2 regularization in a DNN"""
 
 import numpy as np
-from numpy.core.numeric import normalize_axis_tuple
 
 
 def l2_reg_cost(cost, lambtha, weights, L, m):
