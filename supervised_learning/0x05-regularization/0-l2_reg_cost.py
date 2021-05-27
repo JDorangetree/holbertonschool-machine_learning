@@ -11,6 +11,6 @@ def l2_reg_cost(cost, lambtha, weights, L, m):
     normalize = 0
     for i in keys:
         if i[0] == 'W':
-            normalize = normalize + np.linalg.norm(weights[i])
+            normalize = normalize + (np.linalg.norm(weights[i])**2)
     L2 = cost + (lambtha/(2 * m)) * normalize
     return(L2)
