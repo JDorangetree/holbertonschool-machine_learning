@@ -28,4 +28,4 @@ def dropout_forward_prop(X, weights, L, keep_prob):
             softmax = np.exp(Z)
             cache['A' + str(i + 1)] = (softmax / np.sum(softmax, axis=0,
                                                         keepdims=True))
-        return(cache)
+    return(cache)
