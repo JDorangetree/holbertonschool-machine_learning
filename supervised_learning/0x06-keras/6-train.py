@@ -2,8 +2,6 @@
 """builds a neural network with the Keras library"""
 
 import tensorflow.keras as K
-from tensorflow.keras import callbacks
-from tensorflow.python.keras.callbacks import EarlyStopping
 
 
 def train_model(network, data, labels, batch_size, epochs,
