@@ -13,8 +13,10 @@ def train_model(network, data, labels, batch_size, epochs,
                                              patience=patience)
     else:
         callback = []
-    history = network.fit(x=data, y=labels, epochs=epochs,
-                          batch_size=batch_size, verbose=verbose,
-                          shuffle=shuffle, validation_data=validation_data,
-                          callbacks=[callback])
+    history = network.fit(x=data, y=labels, batch_size=batch_size,
+                          epochs=epochs,
+                          verbose=verbose,
+                          callbacks=[callback],
+                          validation_data=validation_data,
+                          shuffle=shuffle)
     return(history)
