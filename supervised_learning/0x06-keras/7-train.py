@@ -19,6 +19,9 @@ def train_model(network, data, labels, batch_size, epochs,
     if validation_data and learning_rate_decay:
         lrd = K.callbacks.LearningRateScheduler(decayed_learning_rate,
                                                 verbose=1)
+    else:
+        callback = []
+        lrd = []
     history = network.fit(data, labels, epochs=epochs,
                           batch_size=batch_size, verbose=verbose,
                           shuffle=shuffle, validation_data=validation_data,
