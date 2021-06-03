@@ -28,6 +28,6 @@ def convolve_grayscale_same(images, kernel):
     for i in range(h):
         for j in range(w):
             conv_out[image, i, j] = (np.sum(image_pad[image,
-                                            i:kh+j, j:kw+j] * kernel,
+                                            i:kh+i, j:kw+j] * kernel,
                                             axis=(1, 2)))
     return conv_out
