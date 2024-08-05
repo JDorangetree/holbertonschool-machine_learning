@@ -11,7 +11,7 @@ def bars():
     labels = ['Farrah', 'Fred', 'Felicia']
     width = 0.35
     l_fruit = ['apples', 'bananas', 'oranges', 'peaches']
-    c = ['r', '#FFFF00', '#FF8000', '#FFE5b4']
+    c = ['r', 'y', '#FF8000', '#FFE5b4']
 
     y_offset = np.zeros(len(labels))
 
