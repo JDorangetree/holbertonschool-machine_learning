@@ -11,7 +11,7 @@ def bars():
     labels = ['Farrah', 'Fred', 'Felicia']
     width = 0.35
     l_fruit = ['apples', 'bananas', 'oranges', 'peaches']
-    c = ['r', 'yellow', '#FF8000', '#FFE5b4']
+    c = ['red', 'yellow', '#FF8000', '#FFE5b4']
 
     y_offset = np.zeros(len(labels))
 
@@ -25,4 +25,3 @@ def bars():
     plt.legend()
 
     plt.show()
-bars()
