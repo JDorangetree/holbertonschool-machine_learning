@@ -4,7 +4,7 @@
 
 def matrix_shape(element):
     """ return the shape of a matrix """
-    if isinstances(element, list):
+    if isinstance(element, list):
         return [len(element)]
     else:
         return [len(element)] + matrix_shape(element[0])
