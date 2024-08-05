@@ -4,9 +4,9 @@
 
 def add_matrices2D(mat1, mat2):
     """return new matrix"""
-    if len(mat1) != len(mat2):
-        return None
     if len(mat1[0]) != len(mat2[0]):
+        return None
+    if len(mat1[1]) != len(mat2[1]):
         return None
     else:
         element = [[1, 1], [1, 1]]
