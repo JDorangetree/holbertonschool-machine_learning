@@ -12,7 +12,7 @@ def frequency():
     plt.figure(figsize=(6.4, 4.8))
 
     plt.hist(student_grades, 10, edgecolor='black')
-    plt.title("Project A")
     plt.xlabel("Grades")
     plt.ylabel("Number of Students")
+    plt.title("Project A")
     plt.show()
