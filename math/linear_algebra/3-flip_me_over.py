@@ -12,4 +12,4 @@ def matrix_transpose(element):
             row.append(element[count][i])
             count += 1
         new_matrix.append(row)
-    return(new_matrix)
+    return new_matrix
