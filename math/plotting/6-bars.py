@@ -17,9 +17,10 @@ def bars():
 
     for row in range(len(fruit)):
         plt.bar(labels, fruit[row], bottom=y_offset,
-                label=l_fruit[row], color=c[row])
+                label=l_fruit[row], color=c[row], width=0.5)
         y_offset = y_offset + fruit[row]
 
+    plt.ylim(0, 80)
     plt.ylabel('Quantity of Fruit')
     plt.title('Number of Fruit per Person')
     plt.legend()
