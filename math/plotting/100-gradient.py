@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
+"""function that show a line"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 
 
 def gradient():
-
+    """plt show"""
     np.random.seed(5)
 
     x = np.random.randn(2000) * 10
