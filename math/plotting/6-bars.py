@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+"""function that show a line"""
+
 import numpy as np
 import matplotlib.pyplot as plt
 
