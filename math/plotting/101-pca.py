@@ -12,7 +12,6 @@ norm_data = data - data_means
 _, _, Vh = np.linalg.svd(norm_data)
 pca_data = np.matmul(norm_data, Vh[:3].T)
 
-# your code here
 
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
